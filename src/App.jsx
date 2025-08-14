@@ -34,7 +34,7 @@ function App() {
         alert("User registered successfully!");
         setFormData({ name: "", email: "", password: "" });
       } else {
-        alert(data.error || "Something went wrong");
+        alert(data.message || "Something went wrong");
       }
     } catch (error) {
       console.error("Error:", error);
